@@ -1,0 +1,21 @@
+/* YourComponent.css */
+
+.hint_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hint_1 ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    /* Adjust the gap between columns if needed */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hint_1 li {
+    margin: 5px 0;
+}
