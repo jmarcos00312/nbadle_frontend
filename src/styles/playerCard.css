@@ -1,4 +1,12 @@
-/* YourComponent.css */
+
+
+
+
+.player_card{
+    color: white;
+    background-color: #333;
+}
+
 
 .hint_1 {
     display: flex;

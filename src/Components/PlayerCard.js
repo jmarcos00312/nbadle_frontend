@@ -15,18 +15,19 @@ function PlayerCard(props) {
 
 
     const imgBlur = {
-        filter: `blur(${blurAmount}px)`,
-        transform: "scale(3)",
+        filter: playerWon ? 'none' : 'blur(10px)',
+        transform: 'scale(3)',
         border: '5px solid black', // Example border style
         padding: '20px', // Example padding
         margin: '100px', // Example margin
     };
 
     const handleSubmit = (submit) => {
-        if (inputValue === player_name) {
+        if (inputValue.toLowerCase() === player_name.toLowerCase()) {
             setIsGameOver(true)
             setPlayerWon(true)
             setHint(0)
+            setBlurAmmount(10)
         }
         setHint(hint => hint + 1)
         setBlurAmmount(x => x - 2)
