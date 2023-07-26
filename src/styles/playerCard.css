@@ -128,10 +128,8 @@ display: flex;
     align-content: center;
     justify-content: flex-start;
     gap: 5em;
-    height: 3em;
+    height: 3.3em;
 }
-
-
 .hint_2 h5 {
     margin:0;
 }
