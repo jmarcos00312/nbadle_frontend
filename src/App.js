@@ -4,11 +4,21 @@ import moment from 'moment-timezone';
 import PlayerCard from './Components/PlayerCard';
 
 const Header = () => {
-  return <h1 style={{
-    color: "Red"
-  }}>
-    Hello react!
-  </h1>
+  return (
+    <h1 style={{
+      color: "#FDB927",
+      fontFamily: "Montserrat",
+      fontWeight: "Bold", // or "bold" for a bold font
+      width: "100%",
+      marginLeft: "3em",
+      marginRight: "3em",
+      marginTop: "0",
+      marginBottom: "0"
+
+    }}>
+      NBADLE
+    </h1>
+  );
 }
 
 

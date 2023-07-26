@@ -1,29 +1,160 @@
 
 
+@keyframes hintUpAnimation {
+    0% {
+        transform: translateY(0);
+    }
 
+    100% {
+        transform: translateY(-20px);
+        /* Adjust the value based on how far up you want the hint to go */
+    }
+}
+
+/* CSS Transition */
 
 .player_card{
     color: white;
     background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    width: 85vh;
+
 }
-
-
-.hint_1 {
+.input_and_button_form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+.input_form {
+    font-size: 20px;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /* Add a transition effect */
+}
+
+.input_form:hover {
+    background-color: #00519F;
+    transform: scale(1.05);
+}
+.submit_btn {
+    max-width: 20em;
+    margin: 5px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /* Add a transition effect */
+}
+
+.submit_btn:hover {
+    background-color: #00519F;
+
+    color: #000;
+    transform: scale(1.05);
+}
+
+
+.player_card_guide {
+    font-family: "Montserrat," "Roboto," "Open Sans";
+    font-weight: bold;
+    font-size:1.5em;
+    padding:20px;
+    margin: 5px;
+    border: 2px solid #FDB927;
+    max-width:40em;
+    min-width: 10em;
+
+}
+/* ================= hint 1 =============================== */
+.hint_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 25em; 
+    align-items: center;
+    margin:0;
+    margin-bottom: 10px;
+}
+
+.hint_1_cont, .hint_2_cont, .hint_3_cont, .hint_4_cont,.hint_5_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 20px;
+    margin: 5px;
+    min-height: .5vh;
+    gap: 2em;
 }
 
 .hint_1 ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
-    /* Adjust the gap between columns if needed */
     margin: 0;
-    padding: 0;
+    /* font-weight: bold; */
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
 .hint_1 li {
-    margin: 5px 0;
+    font-size: larger;
+    /* font-weight: bold; */
+    flex-basis: 35%;
+    margin-left: 20px;
+}
+/* ================= hint 2 =============================== */
+
+.hint_2, .hint_3, .hint_4, .hint_5 {
+display: flex;
+    align-items: flex-end;
+    width: 25em;
+    align-items: center;
+    margin: 0;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    gap: 5em;
+    height: 3em;
+}
+
+
+.hint_2 h5 {
+    margin:0;
+}
+
+.hint_container h5 {
+    font-size: 20px;
+}
+
+.hint_container {
+    /* border: 2px solid #FDB927; */
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .2em;
+    padding-top:100px;
+    font-size: 15px;
+}
+
+.hint_header {
+    background-color: #D01E52;
+    padding: 5px;
+    margin: 0;
+    border-radius: 10%;
 }
