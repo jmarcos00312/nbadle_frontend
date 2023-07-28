@@ -21,7 +21,7 @@ function PlayerCard(props) {
         transform: 'scale(2)',
     };
 
-
+    const [another, setAnother] = useState("")
 
     const handleSubmit = (submit) => {
         if (inputValue.toLowerCase() === player_name.toLowerCase()) {
