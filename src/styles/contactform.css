@@ -1,0 +1,14 @@
+.Contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#message_input {
+  padding: 20px;
+}
+
+#name,
+#email {
+  margin: 20px;
+}
