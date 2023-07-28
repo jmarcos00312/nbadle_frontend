@@ -1,0 +1,23 @@
+.contact_info {
+  display: flex;
+  border: 2px solid #fff;
+  gap: 10em;
+  font-size: x-small;
+  padding: 25px;
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 10px;
+}
+
+.icons {
+  font-size: 50px;
+  color: #fdb927;
+}
